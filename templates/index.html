@@ -1,0 +1,37 @@
+<!-- templates/index.html -->
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="title b612-mono is-3 has-text-black">
+    the macro calculator
+</div>
+
+    <section class="section">
+        <div class="columns is-mobile is-multiline is-centered">
+            <div class="box">
+        <div class="container">
+            <form method="POST">
+                <div class="field">
+                    <label class="label has-text-black b612-mono" for="weight">weight [in pounds]:</label>
+                    <div class="control">
+                        <input class="input" type="number" id="weight" name="weight" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label has-text-black b612-mono" for="fat_percent">fat percentage:</label>
+                    <div class="control">
+                        <input class="input" type="number" id="fat_percent" name="fat_percent" required>
+                    </div>
+                </div>
+                <div class="control">
+                    <button class="button is-link b612-mono">calculate your macros</button>
+                </div>
+            </form>
+        </div>
+        </div>
+        </div>
+    </section>
+{% endblock %}
+
